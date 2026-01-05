@@ -13,6 +13,8 @@ import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Button from "@mui/material/Button";
 
+import cat from "../../public/sergei-wing-RWElb9j7nlc-unsplash.jpg";
+
 export function meta() {
   return [
     { title: "Material UI - React Router example in TypeScript" },
@@ -39,11 +41,7 @@ export default function Home() {
           Material UI - React Router example in TypeScript
         </Typography>
         <Card sx={{ minWidth: 545 }}>
-          <CardMedia
-            sx={{ height: 140 }}
-            image="/public/sergei-wing-RWElb9j7nlc-unsplash.jpg"
-            title="green iguana"
-          />
+          <CardMedia sx={{ height: 140 }} image={cat} title="green iguana" />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
               Cat
